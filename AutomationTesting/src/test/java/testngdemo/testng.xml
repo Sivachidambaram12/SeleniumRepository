@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+	<test name="Test1">
+		<classes>
+			<class name="CalculatorTest">
+			</class>
+		</classes>
+		<test name="Test2">
+			<classes>
+				<class name="testngdemo.AnnotationsTest">
+				</class>
+				<class name="testngdemo.FeaturesTest">
+				</class>
+				<class name="testngdemo.PriorityTest">
+				</class>
+			</classes>
+		</test>
+	</test>
+	<test name="Test3">
+		<groups>
+			<run>
+				<include name="A">
+				</include>
+				<exclude name="B">
+				</exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="testngdemo.GroupsTest">
+			</class>
+		</classes>
+	</test>
+	<test name="Test4">
+		<parameter name="empname" value="Siva">
+		</parameter>
+		<classes>
+			<class name="testngdemo.FeaturesTest">
+			</class>
+		</classes>
+	</test>
+</suite>
